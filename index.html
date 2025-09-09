@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS - Solution Digitale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête (Header) avec la navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#accueil" class="logo">
+                <span class="logo-w">W</span><span class="logo-s">S</span>
+            </a>
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#expertises" class="nav-link">Expertises</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#rdv" class="nav-link cta-nav">Prendre un rdv</a>
+            </div>
+            <!-- Bouton pour le menu mobile -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#accueil" class="mobile-link">Accueil</a>
+            <a href="#expertises" class="mobile-link">Expertises</a>
+            <a href="#portfolio" class="mobile-link">Portfolio</a>
+            <a href="#blog" class="mobile-link">Blog</a>
+            <a href="#rdv" class="mobile-link">Prendre un rdv</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Section Accueil -->
+        <section id="accueil" class="page-section active">
+            <!-- Hero section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-logo">WS</span>
+                        <span class="hero-subtitle">Solutions Digitales</span>
+                    </h1>
+                    <p class="hero-description">
+                        Concrétiser vos idées en une solution digitale
+                    </p>
+                    <a href="#expertises" class="btn btn-primary">
+                        Voir plus
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://source.unsplash.com/random/800x600?abstract,technology,digital" alt="Illustration de technologie abstraite">
+                    <div class="floating-elements">
+                        <div class="float-element float-1"></div>
+                        <div class="float-element float-2"></div>
+                        <div class="float-element float-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Nos missions -->
+            <div class="missions-section">
+                <h2 class="section-title">Nos missions</h2>
+                <div class="missions-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a4 4 0 004-4V5z"/>
+                            </svg>
+                        </div>
+                        <h3>Conception</h3>
+                        <p>Nous concevons des plateformes sur mesure qui reflètent l'identité de votre marque.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3>Optimisation</h3>
+                        <p>Nous assurons que votre solution digitale est rapide, sécurisée et optimisée pour un référencement maximal.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Suivi</h3>
+                        <p>Nous vous accompagnons pour faire évoluer votre projet et garantir son succès à long terme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Comment nous travaillons -->
+            <div class="workflow-section">
+                <h2 class="section-title">Comment nous travaillons</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <h3>1. Analyse & Stratégie</h3>
+                        <p>Nous discutons de vos besoins, analysons vos objectifs et élaborons une stratégie sur mesure pour votre projet.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>2. Conception & Développement</h3>
+                        <p>Nous concevons l'interface utilisateur et développons votre solution digitale en utilisant les dernières technologies.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3>3. Lancement & Croissance</h3>
+                        <p>Nous mettons votre projet en ligne, vous formons et assurons un suivi pour une croissance continue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Avis des partenaires -->
+            <div class="testimonials-section">
+                <div class="container">
+                    <h2 class="section-title">Avis de nos partenaires</h2>
+                    <div class="testimonials-container">
+                        <div class="testimonials-track">
+                            <div class="testimonial-card">
+                                <p>"WS a transformé notre vision en un site web professionnel et performant. Leur expertise en SEO a fait exploser notre trafic !"</p>
+                                <p class="testimonial-author">- Jean Dupont, PDG de JDP Conseil</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"Le tunnel de vente qu'ils ont conçu a amélioré notre taux de conversion de plus de 50%. Une équipe de professionnels à l'écoute."</p>
+                                <p class="testimonial-author">- Marie Leclerc, fondatrice de M.L Créations</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"Leur gestion des publicités en ligne est d'une efficacité redoutable. Notre ROI a été multiplié par trois."</p>
+                                <p class="testimonial-author">- Paul Martin, Directeur marketing chez EkoVert</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"WS a transformé notre vision en un site web professionnel et performant. Leur expertise en SEO a fait exploser notre trafic !"</p>
+                                <p class="testimonial-author">- Jean Dupont, PDG de JDP Conseil</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"Le tunnel de vente qu'ils ont conçu a amélioré notre taux de conversion de plus de 50%. Une équipe de professionnels à l'écoute."</p>
+                                <p class="testimonial-author">- Marie Leclerc, fondatrice de M.L Créations</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"Leur gestion des publicités en ligne est d'une efficacité redoutable. Notre ROI a été multiplié par trois."</p>
+                                <p class="testimonial-author">- Paul Martin, Directeur marketing chez EkoVert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section CTA -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Prêt à démarrer votre projet ?</h2>
+                    <p>
+                        Contactez-nous dès aujourd'hui pour discuter de vos besoins et obtenir un devis gratuit.
+                    </p>
+                    <a href="#rdv" class="btn btn-primary btn-large">
+                        Prendre un rendez-vous
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expertises -->
+        <section id="expertises" class="page-section hidden">
+            <div class="container">
+                <h2 class="section-title">Nos Expertises</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Conception de site web</h3>
+                        <p>Nous créons des sites web modernes, performants et visuellement attrayants, adaptés à vos besoins spécifiques.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <h3>Conception de tunnel de vente</h3>
+                        <p>Nous optimisons le parcours client pour maximiser les conversions et augmenter vos revenus.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Référencement SEO</h3>
+                        <p>Nous améliorons votre visibilité en ligne pour attirer un trafic qualifié et durable.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
+                            </svg>
+                        </div>
+                        <h3>Commerce en ligne</h3>
+                        <p>Nous construisons des boutiques en ligne robustes et faciles à gérer pour vendre vos produits et services.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h3>Échange et vente de cryptomonnaie</h3>
+                        <p>Nous développons des plateformes sécurisées pour l'échange et la vente de cryptomonnaies.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V3a1 1 0 011 1v1M7 4V3a1 1 0 011-1v0M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7M4 7h16M4 7l2-3h12l2 3"/>
+                            </svg>
+                        </div>
+                        <h3>Publicité Google et Facebook Ads</h3>
+                        <p>Nous gérons vos campagnes publicitaires pour toucher votre public cible et générer des leads.</p>
+                    </div>
+                </div>
+
+                <!-- Section FAQ -->
+                <div class="faq-section">
+                    <h2 class="section-title">Foire aux questions</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <button class="faq-btn">
+                                Pourquoi avoir un site web ?
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-content">
+                                Un site web est votre vitrine numérique, disponible 24/7. Il renforce votre crédibilité, vous aide à attirer de nouveaux clients et vous permet de présenter votre expertise et vos produits de manière professionnelle. C'est l'outil essentiel pour établir une présence en ligne durable et crédible.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-btn">
+                                Pourquoi créer un tunnel de vente ?
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-content">
+                                Un tunnel de vente optimise le parcours de vos clients, de la simple curiosité à l'achat final. Il structure la conversion de vos prospects en clients fidèles en automatisant la communication et en guidant l'utilisateur étape par étape. Cela augmente votre taux de conversion et votre rentabilité.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-btn">
+                                Pourquoi le référencement SEO ?
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-content">
+                                Le référencement (Search Engine Optimization ou SEO) rend votre site visible sur les moteurs de recherche comme Google. Il vous permet d'attirer un trafic qualifié, c'est-à-dire des visiteurs qui recherchent activement vos produits ou services. C'est un investissement à long terme pour une croissance durable de votre audience.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-btn">
+                                Pourquoi le commerce en ligne ?
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-content">
+                                Le commerce en ligne, ou e-commerce, vous ouvre les portes d'un marché mondial. Il vous permet de vendre vos produits ou services 24 heures sur 24, sans les contraintes d'une boutique physique. Avec la bonne plateforme, vous pouvez facilement gérer votre inventaire, vos commandes et vos paiements, tout en offrant une expérience d'achat fluide.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-btn">
+                                Pourquoi les publicités Google et Facebook Ads ?
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-content">
+                                Les publicités en ligne (Google Ads et Facebook Ads) vous permettent de cibler précisément votre public idéal et de générer du trafic immédiat vers votre site. Contrairement au SEO qui prend du temps, la publicité payante offre des résultats rapides et mesurables pour des lancements de produits, des promotions ou pour une croissance accélérée.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio" class="page-section hidden">
+            <div class="container">
+                <h2 class="section-title">Nos Réalisations</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x400?ecommerce,website" alt="Projet e-commerce">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-btn">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Site e-commerce pour Espace Jardin</h3>
+                            <p>Conception et développement d'une boutique en ligne pour une entreprise de jardinage.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x400?digital,marketing,graph" alt="Projet tunnel de vente">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-btn">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Tunnel de vente pour BizzBoost</h3>
+                            <p>Création d'un tunnel de vente optimisé pour un service de coaching marketing.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x400?blog,writing,desk" alt="Projet de blog">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-btn">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Plateforme de blog pour Voyageurs Passionnés</h3>
+                            <p>Développement d'un blog avec référencement SEO avancé et un design personnalisé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Blog -->
+        <section id="blog" class="page-section hidden">
+            <div class="container">
+                <h2 class="section-title">Notre Blog</h2>
+                <p class="section-description">
+                    Restez informés sur les dernières tendances du web, nos conseils d'experts et nos études de cas.
+                </p>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?generative-ai,machine-learning" alt="Article sur l'IA générative">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">Octobre 2025</span>
+                            <h3>L'IA Générative : La Révolution Marketing d'Octobre 2025</h3>
+                            <p>L'IA générative permet une hyper-personnalisation du contenu à une échelle jamais vue auparavant...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?green-web,eco-friendly" alt="Article sur le Green Web">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">Octobre 2025</span>
+                            <h3>Le "Green Web" : Comment les marques éco-responsables captivent en 2025</h3>
+                            <p>Les entreprises leaders du marché adoptent des pratiques pour minimiser leur empreinte digitale...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?social-media,community,networking" alt="Article sur les communautés">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">Octobre 2025</span>
+                            <h3>Au-delà des algorithmes : La montée des communautés hyper-personnalisées</h3>
+                            <p>Les utilisateurs, lassés des flux génériques, migrent vers des plateformes et des communautés plus petites...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?advertising,online" alt="Article sur la publicité en ligne">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">20 septembre 2024</span>
+                            <h3>Maximiser votre ROI avec Google et Facebook Ads</h3>
+                            <p>Découvrez comment optimiser vos campagnes pour toucher votre public cible et générer plus de ventes...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?cryptocurrency,blockchain,technology" alt="Article sur les cryptomonnaies">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">25 septembre 2024</span>
+                            <h3>Cryptomonnaies et Blockchain : Tendances et Adresses</h3>
+                            <p>Un tour d'horizon des dernières tendances et de l'impact des adresses blockchain sur le monde financier...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://source.unsplash.com/random/600x400?user experience,design" alt="Article sur le design UX">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">28 septembre 2024</span>
+                            <h3>L'importance du design UX pour votre site web</h3>
+                            <p>Apprenez pourquoi une bonne expérience utilisateur est cruciale pour fidéliser vos clients et augmenter vos conversions...</p>
+                            <a href="#" class="blog-link">Lire la suite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Prendre un rdv -->
+        <section id="rdv" class="page-section hidden">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Prendre un Rendez-vous</h2>
+                    <p class="section-description">
+                        Laissez-nous un message et nous vous recontacterons dans les plus brefs délais pour discuter de votre projet.
+                    </p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Colonne 1 : Infos entreprise -->
+                <div class="footer-column">
+                    <h4 class="footer-logo">
+                        <span class="logo-w">W</span><span class="logo-s">S</span>
+                    </h4>
+                    <p class="footer-description">Votre partenaire pour une présence digitale réussie. Nous transformons vos idées en solutions numériques percutantes.</p>
+                    <div class="footer-info">
+                        <p>123 Rue de la Création, 75001 Paris</p>
+                        <p>contact@ws-digital.fr</p>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                </div>
+                <!-- Colonne 2 : Liens utiles -->
+                <div class="footer-column">
+                    <h4>Autres liens</h4>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#expertises">Expertises</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#rdv">Prendre un rdv</a></li>
+                    </ul>
+                </div>
+                <!-- Colonne 3 : Newsletter -->
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Restez informés de nos actualités et de nos offres.</p>
+                    <form class="newsletter-form">
+                        <div class="newsletter-inputs">
+                            <input type="text" placeholder="Prénom">
+                            <input type="text" placeholder="Nom">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2024 WS. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
